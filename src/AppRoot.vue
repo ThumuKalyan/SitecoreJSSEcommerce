@@ -1,4 +1,4 @@
-<!--
+<!--Main vue
 -->
 <template>
   <context-view :visible="contextViewVisible" />
