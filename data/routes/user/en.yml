@@ -1,0 +1,12 @@
+fields:
+  pageTitle: User page
+placeholders:
+  jss-main:
+  - componentName: User
+    fields:
+        firstname: First Name
+        email: Email
+        phone: Phone
+        address: Address
+        orderhistory: Order History
+        mobile: Mobile           

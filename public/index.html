@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root"></div>
+  <script type="application/json" id="__JSS_STATE__">null</script>
+  <script>
+    // Define the Boxever queue
+var _boxeverq = _boxeverq || [];
+const isMobile = false;
+var ChannelType = isMobile? 'MOBILE_WEB': 'WEB';
+
+// Define the Boxever settings
+var _boxever_settings = {
+  client_key: "psfu6uh05hsr9c34rptlr06dn864cqrx", // Replace with your client key
+  target: "https://api.boxever.com/v1.2", // Replace with your API target endpoint specific to your data center region
+  cookie_domain: ".jss.dev.ecommerce", // Replace with the top level cookie domain of the website that is being integrated e.g ".example.com" and not "www.example.com"
+  web_flow_target: "https://d35vb5cccm4xzp.cloudfront.net", //this is required for Sitecore Personalize for web experience and experiments
+  pointOfSale: "JSSEcommerce" // this is the point of sale you have setup in Sitecore CDP & Personalize
+};
+// Import the Boxever library asynchronously
+(function () {
+  var s = document.createElement("script");
+  s.type = "text/javascript";
+  s.async = true;
+  s.src = "https://d1mj578wat5n4o.cloudfront.net/boxever-1.4.8.min.js";
+  var x = document.getElementsByTagName("script")[0];
+  x.parentNode.insertBefore(s, x);
+})();
+// Place an anonymous function in the Boxever queue
+_boxeverq.push(function () {
+  var viewEvent = {
+    channel: ChannelType,
+    type: "VIEW",
+    language: "EN",
+    currency: "USD",
+    page: "homepage",
+    pos: "JSSEcommerce",
+    browser_id: Boxever.getID(),
+  };
+  // Invoke event create
+  // (<event msg>, <callback function>, <format>)
+  Boxever.eventCreate(viewEvent, function (data) {}, "json");
+});
+  </script>
+  <!--
+    This HTML file is a template.
+    If you open it directly in the browser, you will see an empty page.
+
+    You can add webfonts, meta tags, or analytics to this file.
+    The build step will place the bundled scripts into the <body> tag.
+  -->
+</body>
+
+</html>
