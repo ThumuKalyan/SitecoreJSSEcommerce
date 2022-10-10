@@ -14,7 +14,7 @@ export function loginEvent() {
       page: 'login',
       pos: 'JSSEcommerce',
       browser_id: Boxever.getID(),
-      email: 'kalyant@techaspect.com',
+      email: '',
     };
     // Invoke event create
     // (<event msg>, <callback function>, <format>)
