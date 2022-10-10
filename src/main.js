@@ -8,13 +8,13 @@ import { getAnalytics } from 'firebase/analytics';
 let initLanguage = config.defaultLanguage;
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyAiHXvFOJXLuJ-vyWquHaN1tBdPUWR8etM',
+  apiKey: '',
   authDomain: 'sitecore-jss.firebaseapp.com',
   projectId: 'sitecore-jss',
-  storageBucket: 'sitecore-jss.appspot.com',
-  messagingSenderId: '55520058253',
-  appId: '1:55520058253:web:4c12670bcbcc45635f7bc4',
-  measurementId: 'G-WWMCE1HXBQ',
+  storageBucket: '',
+  messagingSenderId: '',
+  appId: '',
+  measurementId: ',
 };
 
 // Initialize Firebase
